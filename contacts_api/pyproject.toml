@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "contacts-api"
+version = "0.1.0"
+description = ""
+authors = ["Gerenzeo <124388411+Gerenzeo@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "contacts_api"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.103.1"
+psycopg2 = "^2.9.7"
+uvicorn = "^0.23.2"
+sqlalchemy = "^2.0.20"
+pydantic = {extras = ["email"], version = "^2.3.0"}
+python-jose = "^3.3.0"
+bcrypt = "^4.0.1"
+passlib = "^1.7.4"
+email-validator = "^2.0.0.post2"
+python-multipart = "^0.0.6"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
